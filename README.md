@@ -11,7 +11,7 @@ The project consists of several stages:
         * Model training and evaluation
   
   
-####Dependencies
+#### Dependencies
 
 The following dependencies are required to run this project:
 
@@ -22,7 +22,7 @@ The following dependencies are required to run this project:
         * tensorflow
         * scipy
 
-####Usage
+#### Usage
 
 The main.py file consists of several functions that are called sequentially to perform the different stages of the project. These functions include:
 
@@ -42,6 +42,6 @@ loss_comparison: This function compares the training and validation losses and p
 
 The main.py file also uses the hydra library to manage the configuration and parameters of the project. The configuration file is located in the conf directory and is named config.yaml. You can modify the configuration parameters to customize the project.
 
-####Contributing
+#### Contributing
 
 If you find any issues or bugs in this project, please feel free to contribute by opening an issue or creating a pull request.
