@@ -1,0 +1,32 @@
+ord_enc :
+         _target_ : sklearn.preprocessing.OrdinalEncoder
+scaler :
+        _target_ : sklearn.preprocessing.StandardScaler
+#fixed
+test_size : 0.33
+random_state : 42
+sw : False
+# model architecture
+layer_0 : 256
+layer_1 : 128
+l1_0 : 0
+l1_1 : 0
+l2_0 : 0
+l2_1 : 0
+activation_0 : 'relu'
+activation_1 : 'relu'
+dropout : [normal, 0.2]
+optimizer :
+           _target_ : tensorflow.keras.optimizers.Adam
+learning_rate : 0.01
+loss : 'mean_squared_error'
+epochs : 1000
+
+# reduce learning rate
+rlr_monitor : 'val_loss'
+rlr_factor : 0.1
+rlr_patience : 30
+# early stopping
+es_monitor : 'val_loss'
+es_min_delta : 0
+es_patience : 200
