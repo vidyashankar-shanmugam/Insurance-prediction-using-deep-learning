@@ -158,7 +158,7 @@ def my_app(cfg: DictConfig) -> None:
     config_dict = OmegaConf.to_container(cfg, resolve=True)
     wandb.init(project="insurance", config=config_dict)
     # Importing data as a pandas dataframe
-    df = pd.read_csv(r'C:\Users\Admin\OneDrive\Desktop\Projects\Insurance\insurance.csv')
+    df = pd.read_csv('insurance.csv')
     # Cleaning data
     df, sample_weights = data_cleaning(df, hydra.utils.instantiate(cfg.ord_enc), cfg.sw)
     # Splitting data into train and test set
